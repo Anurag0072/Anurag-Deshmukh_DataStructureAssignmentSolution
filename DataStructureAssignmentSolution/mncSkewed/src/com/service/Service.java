@@ -1,15 +1,7 @@
 package com.service;
 
 import com.service.Node;
-//public class Node{
-//	int value;
-//	Node right, left;;
-//	
-//	Node(int item){
-//		value = item;
-//		left = right = null;
-//	}
-//}
+
 public class Service {
 	public static Node node;
 	public static Node prevN = null;
