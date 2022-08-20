@@ -1,7 +1,9 @@
 package com.driver;
 
 import java.util.Scanner;
-import com.service.Service;
+
+import com.service.FloorsCalculate;
+
 public class driver {
 	public static void main(String[] args) {
 		System.out.println("Enter the total number of floors in the building: ");
@@ -13,7 +15,8 @@ public class driver {
 			int floorSize = sc.nextInt();
 			Floors[i] = floorSize;
 		}
-		Service.FloorsCalculate(Floors);
+		FloorsCalculate fc = new FloorsCalculate();
+		fc.performConstructions(Floors);
 		
 			
 		}
